@@ -49,6 +49,7 @@ li a:hover {
 
 .btn-login {
     border: solid var(--secondary-color);
+    background-color: transparent;
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
     border-width: 1px 1px;
@@ -125,8 +126,8 @@ footer{
 }
 
 footer .content {
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    grid-template-rows: [first] 40px [line2] 50px [line3] auto [col4-start] 50px;
 }
 
 footer .content p{
@@ -183,4 +184,34 @@ a{
 
 .footer-nomargin {
     margin-top: 0;
+}
+
+
+/* Product Container */
+
+.product-container{ 
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 3;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.product-container img {
+    margin-top: 1rem;
+}
+
+.product-container p {
+    margin-top: 1rem;
+}
+
+.product-container button {
+    margin-top: 1rem;
+}
+
+.card{
+    background-color: #09044f;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 16rem;
 }
